@@ -1,0 +1,86 @@
+{
+  "author": "",
+  "description": "",
+  "extensionNamespace": "",
+  "fullName": "Scroll",
+  "helpPath": "",
+  "iconUrl": "",
+  "name": "Scroll",
+  "previewIconUrl": "",
+  "shortDescription": "",
+  "version": "1",
+  "tags": [],
+  "authorIds": [
+    "jDp9EIIrNYSe0qAcBEymfd3lzaP2",
+    "iUxwoWYaSvZoEYaykgOrm7kW1Ao2"
+  ],
+  "dependencies": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "",
+      "name": "Scrollable",
+      "objectType": "TextObject::Text",
+      "eventsFunctions": [
+        {
+          "description": "",
+          "fullName": "Scroll",
+          "functionType": "Action",
+          "group": "scroll",
+          "name": "Scroll",
+          "private": false,
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "window.addEventListener('scroll',function(){document.getElementById('showScroll').scrollIntoView = window.pageYOffset + 'px' ;});\n",
+              "parameterObjects": "Object",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Object",
+              "longDescription": "",
+              "name": "Object",
+              "optional": false,
+              "supplementaryInformation": "TextObject::Text",
+              "type": "object"
+            },
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "Behavior",
+              "longDescription": "",
+              "name": "Behavior",
+              "optional": false,
+              "supplementaryInformation": "Scroll::Scrollable",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "Behavior",
+          "label": "",
+          "description": "",
+          "group": "Scroll",
+          "extraInformation": [
+            "Scroll::Scrollable"
+          ],
+          "hidden": false,
+          "name": "Property"
+        }
+      ]
+    }
+  ]
+}
